@@ -3,7 +3,11 @@ import { getSub, postSub } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
 import Button from "../components/Button";
 async function page() {
-  const subscribers = await getSub();
+  if (getSub == true) {
+    let subscribers = await getSub();
+  } else {
+    let subscribers = [];
+  }
 
   async function postingSub(formData) {
     "use server";
