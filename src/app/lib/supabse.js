@@ -10,7 +10,7 @@ const headersList = {
 export async function getSub() {
   const response = await fetch(url, {
     method: "GET",
-    headers: headersList,
+    // headers: headersList,
   });
 
   const data = await response.json();
