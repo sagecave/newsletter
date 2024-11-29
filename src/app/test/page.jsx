@@ -1,7 +1,6 @@
 import { getSub } from "@/app/lib/supabse";
 import { postSub } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
-import { delSub } from "@/app/lib/supabse";
 
 async function page() {
   const subscribers = await getSub();
