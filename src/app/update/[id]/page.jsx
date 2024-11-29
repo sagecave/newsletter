@@ -37,10 +37,10 @@ async function page({ params }) {
       </form>
       <form action={patch} className="flex flex-col w-max rounded-lg border-white border-2 gap-3 p-5">
         <label htmlFor="navn">Name</label>
-        <input id="navn" name="navn" type="text" />
+        <input id="navn" name="navn" type="text" defaultValue={sub.navn} />
         <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="text" />
-        <button className="bg-orange-300 ">Subcribe</button>
+        <input id="email" name="email" type="text" defaultValue={sub.email} />
+        <Button></Button>
       </form>
     </div>
   );

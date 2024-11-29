@@ -31,7 +31,7 @@ async function page() {
           <input id="navn" name="navn" type="text" />
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="text" />
-          <button className="bg-orange-300 ">Subcribe</button>
+         
         </form>
         <ul className="flex flex-row flex-wrap gap-3 mt-4 mb-4">
           {subscribers.map((sub) => (
