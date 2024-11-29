@@ -1,17 +1,17 @@
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const apikey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-// const headersList = {
-//   Accept: "application/json",
-//   "Content-Type": "application/json",
-//   apikey: apikey,
-//   Prefer: "return=representation",
-// };
-// export async function getSub() {
-//   const response = await fetch(url, {
-//     method: "GET",
-//     headers: headersList,
-//   });
+const headersList = {
+  Accept: "application/json",
+  "Content-Type": "application/json",
+  apikey: apikey,
+  Prefer: "return=representation",
+};
+export async function getSub() {
+  const response = await fetch(url, {
+    method: "GET",
+    headers: headersList,
+  });
 
 //   const data = await response.json();
 //   return data;
