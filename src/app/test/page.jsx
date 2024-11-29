@@ -25,7 +25,7 @@ async function page() {
           <input id="navn" name="navn" type="text" />
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="text" />
-          <Button />
+          <input type="submit" />
         </form>
         <ul className="flex flex-row flex-wrap gap-3 mt-4 mb-4">
           {subscribers.map((sub) => (
