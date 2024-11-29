@@ -36,9 +36,6 @@ async function page() {
                   <p> {sub.email}</p>
                 </div>
               </a>
-              {/* <form action={deleteSub(sub.id)}>
-                <button className="bg-red-500 rounded-lg p-5">Delete</button>
-              </form> */}
             </li>
           ))}
           ;
