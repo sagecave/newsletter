@@ -64,13 +64,13 @@ const dataToUpdate = {
   key2: "newValue2",
 };
 
-export async function patchData(id, dataToUpdate) {
-  console.log("PATCH");
-  const response = await fetch(`${url}?id=eq.${id}`, {
-    method: "PATCH",
-    headers: headersList,
-    body: JSON.stringify(dataToUpdate),
-  });
-  const data = await response.json();
-  return data;
-}
+// export async function patchData(id, dataToUpdate) {
+//   console.log("PATCH");
+//   const response = await fetch(`${url}?id=eq.${id}`, {
+//     method: "PATCH",
+//     headers: headersList,
+//     body: JSON.stringify(dataToUpdate),
+//   });
+//   const data = await response.json();
+//   return data;
+// }
