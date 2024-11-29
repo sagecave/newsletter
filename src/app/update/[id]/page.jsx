@@ -1,6 +1,6 @@
 import { getSubById, delSub, patchData } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
-import Button from "../components/Button";
+
 import { redirect } from "next/navigation";
 async function page({ params }) {
   let { id } = await params;
@@ -40,7 +40,7 @@ async function page({ params }) {
         <input id="navn" name="navn" type="text" defaultValue={sub.navn} />
         <label htmlFor="email">Email</label>
         <input id="email" name="email" type="text" defaultValue={sub.email} />
-        <Button></Button>
+        <input type="submit" />
       </form>
     </div>
   );
