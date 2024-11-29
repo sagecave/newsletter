@@ -1,7 +1,7 @@
 import { getSub, postSub } from "@/app/lib/supabse";
 
 import { revalidatePath } from "next/cache";
-import Button from "@/app/components/Button";
+import Button from "../components/Button";
 async function page() {
   const subscribers = await getSub();
 

@@ -1,6 +1,6 @@
 import { getSubById, delSub, patchData } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
-import Button from "@/app/components/Button";
+import Button from "../components/Button";
 import { redirect } from "next/navigation";
 async function page({ params }) {
   let { id } = await params;
