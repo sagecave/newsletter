@@ -3,7 +3,17 @@ import { postSub } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
 
 async function page() {
-  const subscribers = await getSub();
+  let subscribers = await getSub();
+
+  try {
+    subscribers = await getSub(); // Fetch subscribers
+    if (!Array.isArray(subscribers)) {
+      throw new Error("Fetched data is not an array");
+    }
+  } catch (error) {
+    console.error("Error fetching subscribers:", error);
+    subscribers = []; // Fallback to an empty array if fetch fails
+  }
 
   async function postingSub(formData) {
     "use server";
