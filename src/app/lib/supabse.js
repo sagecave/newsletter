@@ -11,6 +11,7 @@ export async function getSub() {
   const response = await fetch(url, {
     method: "GET",
     headers: headersList,
+    body: JSON.stringify(),
   });
 
   const data = await response.json();
