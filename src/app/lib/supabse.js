@@ -68,11 +68,7 @@ export async function patchData(id, dataToUpdate) {
   console.log("PATCH");
   const response = await fetch(`${url}?id=eq.${id}`, {
     method: "PATCH",
-    headers: {
-      "Content-Type": "application/json",
-      apikey: apikey,
-      Prefer: "return=representation",
-    },
+    headers: headersList,
     body: JSON.stringify(dataToUpdate),
   });
   const data = await response.json();
