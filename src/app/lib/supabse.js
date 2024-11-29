@@ -13,9 +13,9 @@ export async function getSub() {
     headers: headersList,
   });
 
-//   const data = await response.json();
-//   return data;
-// }
+  const data = await response.json();
+  return data;
+}
 // export async function postSub(postData) {
 //   const response = await fetch(url, {
 //     method: "POST",
