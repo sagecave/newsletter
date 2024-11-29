@@ -1,6 +1,6 @@
 "use client";
 import { useFormStatus } from "react-dom";
-function subing() {
+function button() {
   const { pending } = true;
 
   return (
