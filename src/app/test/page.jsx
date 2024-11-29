@@ -1,5 +1,4 @@
-import { getSub } from "@/app/lib/supabse";
-import { postSub } from "@/app/lib/supabse";
+import { getSub, postSub } from "@/app/lib/supabse";
 import { revalidatePath } from "next/cache";
 
 async function page() {
@@ -27,7 +26,7 @@ async function page() {
           <input id="email" name="email" type="text" />
         </form> */}
         <ul className="flex flex-row flex-wrap gap-3 mt-4 mb-4">
-          {subscribers.map((sub) => (
+          {/* {subscribers.map((sub) => (
             <li className="bg-green-800 p-3 rounded-lg " key={sub.id}>
               <a href={`/update/${sub.id}`}>
                 <div>
@@ -37,7 +36,7 @@ async function page() {
                 </div>
               </a>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
     </div>
