@@ -38,7 +38,6 @@ async function page() {
               </a>
             </li>
           ))}
-          ;
         </ul>
       </div>
     </div>
