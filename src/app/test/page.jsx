@@ -1,7 +1,7 @@
 import { getSub, postSub } from "@/app/lib/supabse";
 
 import { revalidatePath } from "next/cache";
-
+import Button from "@/app/components/Button";
 async function page() {
   const subscribers = await getSub();
 
@@ -25,6 +25,7 @@ async function page() {
           <input id="navn" name="navn" type="text" />
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="text" />
+          <Button />
         </form>
         <ul className="flex flex-row flex-wrap gap-3 mt-4 mb-4">
           {subscribers.map((sub) => (
